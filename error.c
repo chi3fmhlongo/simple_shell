@@ -1,11 +1,5 @@
 #include "shell.h"
 
-/**
- * _puts - Prints a string to the standard output stream
- * @str: The string to print
- *
- * Return: Void
- */
 void _puts(char *str)
 {
 	size_t len;
@@ -19,12 +13,6 @@ void _puts(char *str)
 	}
 }
 
-/**
- * _puterror - Prints an error message to the standard error stream
- * @err: The error message to print
- *
- * Return: Void
- */
 void _puterror(char *err)
 {
 	size_t len;
