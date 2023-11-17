@@ -1,9 +1,5 @@
 #include "shell.h"
 
-/**
- * shell_cd - changes the current working directory of the shell
- * @args: array of arguments
- */
 void shell_cd(char **args)
 {
 	char *dir = args[1];
