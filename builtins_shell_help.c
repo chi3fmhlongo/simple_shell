@@ -1,8 +1,5 @@
 #include "shell.h"
 
-/**
- * shell_help - displays help information for built-in commands
- */
 void shell_help(void)
 {
 	_puts("\nShell Version 1.0.0\n\n");
