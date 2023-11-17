@@ -1,13 +1,5 @@
 #include "shell.h"
 
-/**
- * find_in_path - Looks for a command in each directory specified in the PATH
- *                environment variable
- * @command: pointer to `command` string to look for.
- *
- * Return: pointer to string containing the full path (success) if it is found,
- *         or NULL if it is not found (failure).
-*/
 char *find_in_path(char *command)
 {
 	struct stat st;
