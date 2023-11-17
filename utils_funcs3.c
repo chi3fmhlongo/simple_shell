@@ -1,11 +1,5 @@
 #include "shell.h"
 
-/**
- * _atoi - Converts a string to an integer.
- * @str: The string to convert.
- *
- * Return: The integer value of the string.
- */
 int _atoi(const char *str)
 {
 	int i, sign;
@@ -28,13 +22,6 @@ int _atoi(const char *str)
 	return (num * sign);
 }
 
-/**
- **_memset - fills memory with a constant byte
- *@s: the pointer to the memory area
- *@b: the byte to fill *s with
- *@n: the amount of bytes to be filled
- *Return: (s) a pointer to the memory area s
- */
 char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;
@@ -44,16 +31,6 @@ char *_memset(char *s, char b, unsigned int n)
 	return (s);
 }
 
-/**
- * _memcpy - function that copies memory area
- *
- * @dest: buffer where we will copy to
- * @src: what we are to copy
- * @n: n bytes of @src
- *
- * Return: Always 0 (Success)
-*/
-
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int i;
@@ -62,15 +39,6 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 		dest[i] = src[i];
 	return (dest);
 }
-
-/**
- * _realloc - reallocates a block of memory
- * @ptr: pointer to previous malloc'ated block
- * @old_size: byte size of previous block
- * @new_size: byte size of new block
- *
- * Return: pointer to da ol'block nameen.
- */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	char *p;
@@ -92,20 +60,6 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	free(ptr);
 	return (p);
 }
-
-/**
- * _calloc - a function that allocates
- *           memory for an array using malloc
- *
- *           It is basically the equivalent to
- *           malloc followed by memset
- *
- * @nmemb: size of array
- * @size: size of each element
- *
- * Return: pointer with new allocated memory
- *         or NULL if it fails
-*/
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
